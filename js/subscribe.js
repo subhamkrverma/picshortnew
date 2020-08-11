@@ -1,27 +1,29 @@
-var firebaseConfig = {
-    apiKey: "AIzaSyAOS5tqDWokhRm89LN72IHM66fGI9NhaR4",
-    authDomain: "picshort-feedback.firebaseapp.com",
-    databaseURL: "https://picshort-feedback.firebaseio.com",
-    projectId: "picshort-feedback",
-    storageBucket: "picshort-feedback.appspot.com",
-    messagingSenderId: "681212252549",
-    appId: "1:681212252549:web:26b93075c1c34a7a0cf4ec",
-    measurementId: "G-F5JM4Q3GCF"
+/*var firebaseConfig = {
+    apiKey: "AIzaSyB-XowF6ecqBLSIkIcuXEnY0fHdueSw-DM",
+    authDomain: "email-a29a3.firebaseapp.com",
+    databaseURL: "https://email-a29a3.firebaseio.com",
+    projectId: "email-a29a3",
+    storageBucket: "email-a29a3.appspot.com",
+    messagingSenderId: "337058618883",
+    appId: "1:337058618883:web:e207fa4119a663ea0b3836",
+    measurementId: "G-JW3MHWQBTL"
   };
-  // Initialize Firebase
+// Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 
-  
-var messagesref = firebase.database().ref('subscribe');
+  */
+//var messagesref = firebase.database().ref('subscribe');
 
 
-document.getElementById('subscribe').addEventListener('button-addon2', submitform);
+document.getElementById('contactForm').addEventListener('submit', submitform);
 
 
 function submitform(e) {
     e.preventDefault();
+    console.log(123);
+}
+    /*
     var subscribe = getValue('subscribe');
-    
     
     savemessage(subscribe);
 
@@ -45,4 +47,4 @@ function savemessage(subscribe) {
         
     });
     
-}
+}*/
